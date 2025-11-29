@@ -1,0 +1,121 @@
+/** 
+ * Modern Cyberpunk Theme
+ * Neon holographic accents, deep-black UI, glowing edges, synthwave atmosphere
+ */
+
+:root {
+  --ifm-color-primary: #8a2be2;       /* Electric purple neon */
+  --ifm-color-primary-dark: #6f22b5;
+  --ifm-color-primary-darker: #55198a;
+  --ifm-color-primary-darkest: #3c1161;
+  --ifm-color-primary-light: #a855f7;
+  --ifm-color-primary-lighter: #c084fc;
+  --ifm-color-primary-lightest: #e9d5ff;
+
+  --ifm-background-color: #050505;             /* Deep cyber-black */
+  --ifm-color-content: #c7c7c7;                /* Metallic gray text */
+  --ifm-color-content-secondary: #8b8b8b;      /* Dim gray */
+  --ifm-heading-color: #e8e8e8;                /* Bright for titles */
+
+  --ifm-navbar-background-color: #070707;
+  --ifm-footer-background-color: #030303;
+
+  --ifm-menu-color-background-active: rgba(138, 43, 226, 0.18); /* Purple neon glow */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 255, 255, 0.08); /* Subtle cyan hologram line */
+}
+
+[data-theme='dark'],
+[data-theme='light'] {
+  --ifm-background-color: #050505;
+  --ifm-color-primary: #8a2be2;
+  --ifm-heading-color: #e8e8e8;
+  --ifm-color-content: #c7c7c7;
+  --ifm-navbar-background-color: #070707;
+  --ifm-footer-background-color: #030303;
+  --ifm-menu-color-background-active: rgba(138, 43, 226, 0.18);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 255, 255, 0.08);
+}
+
+/* Body — cyber-tech typography with neon focus */
+body {
+  background: #050505;
+  color: var(--ifm-color-content);
+  font-family: 'Orbitron', 'Rajdhani', 'Inter', sans-serif;
+  line-height: 1.65;
+  letter-spacing: 0.3px;
+}
+
+/* Headings — clean, sharp, futuristic */
+h1, h2, h3, h4, h5, h6 {
+  color: #e8e8e8;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(138, 43, 226, 0.6); /* Purple glow */
+}
+
+/* Links — neon on hover */
+a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+a:hover {
+  color: #8a2be2;
+  text-shadow: 0 0 6px rgba(138, 43, 226, 0.8);
+}
+
+.menu__link--active,
+.navbar__item.navbar__link--active {
+  color: #8a2be2 !important;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(138, 43, 226, 0.7);
+}
+
+/* Navbar & sidebar — neon lines, cyber panel look */
+.navbar,
+.theme-doc-sidebar-menu {
+  background: #070707 !important;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15); /* Cyan laser line */
+}
+
+.menu__link {
+  color: #8b8b8b;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  color: #e8e8e8;
+  background: rgba(255, 255, 255, 0.04);
+  text-shadow: 0 0 4px rgba(0, 255, 255, 0.6);
+}
+
+.menu__link--active {
+  background: rgba(138, 43, 226, 0.18);
+  color: #8a2be2 !important;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+}
+
+/* Code blocks — dark terminal + neon accents */
+pre {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.15);
+}
+
+/* Buttons — neon border glow */
+.button.button--secondary {
+  color: #c7c7c7;
+  background: transparent;
+  border: 1px solid rgba(138, 43, 226, 0.5);
+  transition: all 0.2s ease;
+}
+
+.button.button--secondary:hover {
+  background: rgba(138, 43, 226, 0.2);
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(138, 43, 226, 0.6),
+              0 0 12px rgba(0, 255, 255, 0.3);
+  border-color: #8a2be2;
+}
